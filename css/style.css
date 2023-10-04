@@ -31,3 +31,31 @@ input[type='search'] {
     height: 15px !important;
     border-radius: 50% !important;
 }
+
+.owl-carousel .item .col-3{
+    width: 300px !important;
+    margin-bottom: 30px;
+}
+
+.card{
+    border-radius: 10px !important;
+}
+.card-img{
+    border-radius: 10px 10px 0px 0px !important;
+    height: 200px;
+}
+
+@media screen and (max-width: 750px) {
+    .xl {
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
+.headimg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./../img/photo_2023-10-02_17-19-23.jpg);
+    height: 600px;
+    object-fit: cover;
+}
