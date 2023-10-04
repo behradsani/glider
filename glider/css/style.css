@@ -1,0 +1,33 @@
+nav {
+    font-size: 14px;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
+
+body {
+    direction: rtl;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+input[type='search'] {
+    background: url('./../img/search-normal.png') no-repeat scroll 96% 50% !important;
+}
+
+.text-14px {
+    font-size: 14px;
+}
+
+.text-12px {
+    font-size: 12px;
+}
+
+.circle-btn {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+}

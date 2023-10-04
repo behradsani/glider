@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <script src="https://kit.fontawesome.com/47def0666d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl py-4 shadow">
+        <section class="container">
+            <a href="#" class="navbar-brand">
+                <img src="./../img/RAST_menue.webp" alt="navbar-brand">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbar">
+                <ul class="nav navbar-nav d-flex align-items-xl-center align-items-start mt-xl-0 mt-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fa-solid fa-user ms-1"></i>
+                            ورود/ثبت نام
+                        </a>
+                        <div class="modal fade" id="loginModal" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header d-flex justify-content-between">
+                                    <div>
+                                        <h2 class="modal-title fs-5">ورود</h2>
+                                    </div>
+                                    <div>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <input class="form-control" type="tel" name="tel" id="tel" placeholder="شماره تلفن">
+                                    <input class="form-control mt-3" type="password" name="password" id="password" placeholder="رمز عبور">
+                                </div>
+                                <div class="modal-footer d-flex justify-content-between">
+                                    <div>
+                                        <button class="btn text-14px text-danger" data-bs-dismiss="modal">بستن
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                        <button class="btn text-14px btn-success">
+                                            ثبت
+                                            <i class="fa-solid fa-check"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn text-14px btn-primary" data-bs-target="#singup" data-bs-toggle="modal">ثبت نام</button>    
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="singup">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header d-flex justify-content-between">
+                                        <div>
+                                            <h2 class="modal-title fs-5">ثبت نام</h2>
+                                        </div>
+                                        <div>
+                                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <input class="form-control" type="text" name="user" id="user" placeholder="نام کاربری">
+                                        <input class="form-control mt-3" type="tel" name="tel" id="tel" placeholder="شماره تلفن">
+                                        <input class="form-control mt-3" type="password" name="password" id="password" placeholder="رمز عبور">
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-between">
+                                        <div>
+                                            <button class="btn text-14px text-danger" data-bs-dismiss="modal">بستن
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                            <button class="btn text-14px btn-success">
+                                                ثبت
+                                                <i class="fa-solid fa-check"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button class="btn text-14px btn-primary" data-bs-target="#loginModal" data-bs-toggle="modal">صفحه ورود</button>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-cart-shopping ms-1"></i>
+                            ثبت سفارش</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropstart">
+                            <button class="btn p-0 border-0" data-bs-toggle="dropdown">
+                                <p class="nav-link m-0" style="height: 37px;">
+                                    <i class="fa-solid fa-circle-info ms-1"></i>
+                                    بیشتر
+                                </p>
+                            </button>
+                            <ul class="dropdown-menu z-1 position-absolute">
+                                <li><a class="dropdown-item text-end" href="#">Action</a></li>
+                                <li><a class="dropdown-item text-end" href="#">تماس با ما</a></li>
+                                <li><a class="dropdown-item text-end" href="#">
+                                    <i class="fa-solid fa-info ms-1"></i>
+                                    درباره ما
+                                </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav d-flex align-items-start mt-xl-0 mt-2 ">
+                    <li class="nav-item">
+                        <form class="form">
+                            <input type="search" name="search" id="search" class="form-control rounded-4 pe-5 px-4"
+                            placeholder="سرچ کنید">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+    <article>
+        
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
